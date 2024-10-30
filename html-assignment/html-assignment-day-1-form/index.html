@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Assignment Day 2 Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HTML Learning</h1>
+      <br />
+      <nav>
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="">Home</a></li>
+          <li class="nav-li"><a href="">About us</a></li>
+          <li class="nav-li"><a href="">Support</a></li>
+          <li class="nav-li"><a href="">Gallery</a></li>
+          <li class="nav-li"><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <hr />
+    <br />
+
+    <main>
+      <section>
+        <h2 class="form-heading">HTML Forms</h2>
+      </section>
+      <br />
+      <hr />
+      <br />
+      <br />
+      <section class="form-container">
+        <h3><strong>Personal Details</strong></h3>
+        <br />
+        <br />
+        <form action="" class="form-items">
+          <div class="form-item">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="form-item">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="form-item">
+            <label for="location">Location</label>
+            <input type="text" id="location" />
+          </div>
+          <div class="form-item">
+            <label for="gender">Gender</label>
+            <div class="form-item-radio">
+              <input type="radio" id="male" name="gender" checked />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="date">Birthday</label>
+            <input type="date" id="date" />
+          </div>
+          <div class="form-item">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="" selected disabled>Select Country</option>
+              <option value="india">India</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+            </select>
+          </div>
+          <div class="form-item-other">
+            <label for="other">Other Information</label>
+            <textarea
+              name="other"
+              id="other"
+              cols="22"
+              rows="5"
+              class="form-item-textarea"
+            ></textarea>
+          </div>
+          <div class="form-item-checkbox">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"> I want to receive the newsletter </label>
+          </div>
+          <div class="form-item-button">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
