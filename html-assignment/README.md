@@ -1,1 +1,1 @@
-# html-assignment-day-1
+# This folder contains the HTML assignments for Web-trainee-2024.
