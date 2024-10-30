@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 60px 165px;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  margin: 60px 0 0 20px;
+}
+:where(.heading) {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+}
+.information-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.personal-information {
+  width: 50%;
+}
+.contact-information {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.text-line-height {
+  line-height: 1.5;
+}
+.contact-information-link {
+  padding: 12px;
+  font-size: 18px;
+  color: #0f3beb;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.light-text {
+  color: #585858;
+}
+:where(.experience-title, .education-title) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+:where(.experience-title-text, .education-title-text) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+:where(.experience-list, .education-list) {
+  margin: 10px 0 0 20px;
+}
+.experience-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.border-line {
+  border-bottom: 1px dashed lightgray;
+  margin: 12px 0;
+}
+:where(.skills-table, .languages-table) {
+  width: 80%;
+  table,
+  tr,
+  td {
+    border: 1px dotted gray;
+    padding: 10px;
+    gap: 8px;
+    text-align: center;
+  }
+}
+.table-row-languages {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+}
+.table-data-languages {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-section {
+  margin-left: 20px;
+}
+.languages-section {
+  margin: 16px 0;
+}
