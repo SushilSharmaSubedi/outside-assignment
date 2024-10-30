@@ -1,0 +1,43 @@
+/* Explore other selectors - for states of elements, forms, buttons, words, some level 4 selectors */
+
+/* Pseudo-classes for states of elements */
+button:hover {
+  background-color: lightblue;
+}
+
+button:active {
+  background-color: rgba(129, 50, 50, 0.8);
+  color: white;
+}
+
+/* Form selectors */
+input[type="text"] {
+  border: 1px solid #585757;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(223, 242, 159, 0.206);
+}
+
+input:focus {
+  border-color: blue;
+}
+
+/* Button selectors */
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Level 4 selectors */
+
+:is(h1, h2, h3) {
+  color: darkgreen;
+  background-color: rgba(255, 0, 0, 0.206);
+}
+
+:where(.class1, .class2, .button) {
+  margin: 10px;
+  background-color: lightgray;
+}
