@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 60px 165px;
+}
+h1 {
+  font-size: 48px;
+}
+.nav-ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-li a {
+  text-decoration: none;
+  color: #2400ff;
+}
+.table {
+  height: 250px;
+  padding: 8px;
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+}
+.table-row {
+  height: 30px;
+}
+.table-data {
+  height: 50px;
+  padding: 0 8px;
+}
