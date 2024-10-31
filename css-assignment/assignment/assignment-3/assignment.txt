@@ -1,0 +1,13 @@
+
+The box-sizing property in CSS is used to define how the width and height of an element are calculated. It can help create an alternate box model by changing the way padding and borders are included in an element’s total dimensions. This helps prevent unwanted overflow or sizing issues, making layout design easier and more predictable.
+
+The Two Box Models
+
+Content-box (default):
+Width and height only include the content area.
+Padding and border are added outside the defined width and height, which can lead to larger elements than expected.
+
+
+Border-box (alternate):
+Width and height include content, padding, and border.
+This makes the element exactly the specified width and height, regardless of padding or borders, leading to a more intuitive layout.
