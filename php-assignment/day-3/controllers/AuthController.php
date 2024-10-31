@@ -34,12 +34,16 @@ class AuthController {
             
             $user = $this->userModel->getUserByUsername($username);
 
-            if ($user && password_verify($password, $user['password'])) {
-                $_SESSION["user_id"] = $user["id"];
-                header("Location: /views/welcome.php");
-                exit();
+            if ($user) {
+                if (password_verify($password, $user['password'])) {
+                    
+                    header("Location: /views/welcome.php");
+                    exit();
+                } else {
+                    return "Password does not match.";
+                }
             } else {
-                return "Invalid username or password.";
+                return "Username does not exist.";
             }
         }
     }
