@@ -1,0 +1,126 @@
+/* 1. Selectors for Element States */
+button:hover {
+  background-color: #ff0000;
+}
+button:active {
+  background-color: #ccc;
+}
+input:focus {
+  border-color: green;
+}
+div:focus-within {
+  border: 2px dashed blue;
+}
+button:disabled {
+  opacity: 0.5;
+}
+input[type="checkbox"]:checked + label {
+  color: green;
+}
+
+/* 2. Form-related Selectors */
+input:valid {
+  border-color: blue;
+}
+input:invalid {
+  border-color: red;
+}
+input:in-range {
+  background-color: lightyellow;
+}
+input:out-of-range {
+  background-color: pink;
+}
+input:placeholder-shown {
+  color: gray;
+}
+input:required {
+  border: 2px solid purple;
+}
+input:optional {
+  border: 1px dashed gray;
+}
+
+/* 3. Button-specific Selectors */
+button:enabled {
+  background-color: lightgreen;
+}
+button:focus-visible {
+  outline: 2px solid orange;
+}
+
+/* 4. Structural Selectors */
+ul li:nth-child(2) {
+  color: orange;
+} /* Second item */
+ul li:nth-of-type(3) {
+  color: purple;
+} /* Third of its type */
+.parent > p:first-child {
+  font-weight: bold;
+} /* First child of its parent */
+.parent > p:last-child {
+  color: blue;
+} /* Last child */
+.only-child:only-child {
+  background-color: lightcoral;
+}
+div:empty {
+  background-color: lightgray;
+}
+
+/* 5. CSS Level 4 Selectors */
+:is(h1, h2, h3).highlight {
+  color: teal;
+}
+:where(p, div, span).no-specificity {
+  margin: 0;
+}
+:not(.exclude-this) {
+  color: black;
+}
+ul:has(li.selected) {
+  border: 1px solid blue;
+}
+
+/* 6. Attribute Selectors */
+a[href^="https://"]
+{
+  color: blue;
+} /* Links starting with "https://" */
+a[href$=".pdf"] {
+  color: red;
+} /* Links ending with ".pdf" */
+a[href*="download"] {
+  text-decoration: underline;
+} /* Links containing "download" */
+
+/* 7. Content-based Selectors */
+div:empty {
+  background-color: lightgray;
+}
+.content::before {
+  content: "Note: ";
+  font-weight: bold;
+}
+.content::after {
+  content: " (End of content)";
+  font-style: italic;
+}
+ul li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+ul li:nth-child(odd) {
+  background-color: #e2e2e2;
+}
+
+/* 8. Relationship Selectors */
+.parent > p {
+  color: darkblue;
+} /* Direct child */
+h2 + p {
+  color: darkgreen;
+} /* Adjacent sibling */
+h2 ~ p {
+  color: darkred;
+} /* General sibling */
