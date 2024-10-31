@@ -1,0 +1,33 @@
+Identifying Block Elements and Inline Elements
+
+#Block Elements
+    Block elements are those that occupy the full width available, creating a new line before and after the element. They typically start on a new line and take up the entire width of their parent container.
+
+Examples of Block Elements:
+
+1. <div>: A generic container for flow content.
+2. <h1> - <h6>: Headings of different levels, with <h1> being the highest level.
+3. <p>: A paragraph of text.
+4. <section>: A thematic grouping of content, typically with a heading.
+5. <article>: Independent content that can be distributed and reused.
+6. <nav>: A section of navigation links.
+7. <header>: Introductory content or navigational links for a section or page.
+8. <footer>: Footer content for a section or page.
+9. <aside>: Content that is related to the main content but is separate from it (like sidebars).
+9. <form>: A container for input elements.
+
+#Inline Elements
+    Inline elements do not start on a new line and only take up as much width as necessary. They can sit next to each other on the same line.
+
+Examples of Inline Elements:
+
+1. <span>: A generic inline container for text.
+2. <a>: An anchor link to another webpage or resource.
+3. <strong>: Represents strong importance (usually bold).
+4. <em>: Represents emphasized text (usually italic).
+5. <img>: Embeds an image in the document.
+6. <br>: Inserts a line break.
+7. <code>: Represents a fragment of computer code.
+8. <small>: Renders text smaller than the surrounding text.
+9. <sub>: Renders text as subscript.
+10. <sup>: Renders text as superscript.

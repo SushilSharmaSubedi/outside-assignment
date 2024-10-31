@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  color: #4caf50;
+}
+
+.block-element {
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #e0f7fa;
+}
+
+code {
+  background-color: #f9f9f9;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+strong {
+  color: #d32f2f;
+}
+
+em {
+  color: #1976d2;
+}
+
+span {
+  background-color: #ffe0b2;
+  padding: 2px 4px;
+}
+
+small {
+  color: #757575;
+}
