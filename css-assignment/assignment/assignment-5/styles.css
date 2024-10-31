@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #4caf50;
+}
+
+.parent {
+  margin-bottom: 20px;
+}
+
+.inline-block-item {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #e0f7fa;
+  border: 1px solid #009688;
+  margin-right: 10px; /* Default margin */
+}
+
+/* Method 2: Set Font Size to Zero */
+.font-size-zero {
+  font-size: 0;
+}
+.font-size-zero .inline-block-item {
+  font-size: 16px; /* Reset font size */
+}
+
+/* Method 3: Negative Margin */
+.negative-margin .inline-block-item {
+  margin-right: -4px; /* Adjust to remove whitespace */
+}
+
+/* Flexbox Styles for Method 5 */
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #ffe0b2;
+  border: 1px solid #ff9800;
+  margin-right: 10px; /* Default margin */
+}
