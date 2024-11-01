@@ -1,0 +1,44 @@
+/* Basic styling for list */
+.list-container {
+  list-style-type: none;
+}
+.list-item {
+  position: relative;
+  margin-bottom: 16px;
+  padding-bottom: 4px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  padding-left: 24px;
+}
+
+/* Pseudo-element for hover underline */
+.list-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  height: 1px;
+  background-color: #333;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.list-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.list-item::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+}
