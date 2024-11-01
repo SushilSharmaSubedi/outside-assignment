@@ -1,0 +1,15 @@
+Different methods to solve the problem with the clear property.
+
+When clear is used to control layout with floated elements, it can cause container collapse, where the parent container doesn’t fully contain its floated children. The different methods to solve this problem are:
+
+1. Add a Sibling Element with clear: both:
+    Add an empty div or similar element after floated items, setting clear: both. This forces the following content to appear below the floats, but it adds extra HTML and can make the code messy.
+
+2. Use a CSS Clearfix:
+    Apply a ::after pseudo-element on the container with content: ""; display: table; clear: both;. This lets the parent automatically wrap its floated children without extra markup.
+
+3. Set overflow: auto on the Container:
+    Adding overflow: auto or overflow: hidden to the container makes it wrap floated children. This method works well, but if you need visible overflow, it might be restrictive.
+
+4. Switch to Flexbox or Grid Layout:
+    For layout structure, use Flexbox or Grid instead of floats. Both methods naturally contain their children, so clear isn’t needed, and they’re more flexible for modern designs.
