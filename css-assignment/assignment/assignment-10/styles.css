@@ -1,0 +1,32 @@
+/* Basic reset and container styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive title using clamp() */
+.title {
+  font-size: clamp(24px, 5vw, 48px); /* Responsive size between 24px and 48px */
+  color: #333;
+}
+
+/* Responsive paragraph using min() and max() */
+.description {
+  font-size: max(
+    16px,
+    min(3vw, 20px)
+  ); /* Size scales with viewport but is constrained */
+  color: #555;
+}

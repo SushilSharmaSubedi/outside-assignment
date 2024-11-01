@@ -1,0 +1,13 @@
+Research min(), max() and clamp(), and explain in an example how they are different from using media queries.
+
+
+1. min(): This function takes multiple values and returns the smallest one. It is useful for setting maximum limits in responsive designs. For example, font-size: min(4vw, 24px); means the font size will scale with the viewport width (4% of the viewport width), but will not exceed 24px.
+
+2. max(): This function takes multiple values and returns the largest one. It is helpful for setting minimum limits. For instance, padding: max(2vw, 16px); means the padding will increase with the viewport width (2% of the viewport width) but will not drop below 16px, ensuring consistency on smaller screens.
+
+3. clamp(): This function defines a responsive range with three parameters: a minimum value, a preferred value that scales, and a maximum value. For example, font-size: clamp(16px, 2vw, 24px); means the font size will scale with 2% of the viewport width, but it will stay within the range of 16px to 24px, preventing it from getting too small or too large.
+
+
+Media queries operate based on specific breakpoints, where styles change when the viewport reaches certain widths. For instance, you might set a font size to 16 pixels for small screens, switch to 20 pixels at 600 pixels, and then to 24 pixels at 1000 pixels. This creates a "step" effect, resulting in abrupt changes in size.
+
+In contrast, functions like clamp() enable smooth, continuous adjustments without needing set breakpoints. This allows styles to adapt fluidly to different screen sizes, resulting in a more harmonious and responsive design that feels natural, rather than experiencing sudden jumps in size.
