@@ -1,0 +1,7 @@
+padding-inline: Adds padding on both sides along the inline axis (usually left and right). This adjusts based on the text direction of the element (e.g., in left-to-right mode, it applies to left and right).
+
+padding-block: Adds padding on both sides along the block axis (usually top and bottom). This remains consistent regardless of text direction.
+
+padding-inline-start and padding-inline-end: These properties set padding at the start and end of the inline axis. In left-to-right text direction, padding-inline-start applies to the left and padding-inline-end to the right. In right-to-left, it’s reversed.
+
+padding-block-start and padding-block-end: These set padding at the start and end of the block axis (top and bottom for most writing modes). These are unaffected by text direction, making them consistent regardless of reading orientation.

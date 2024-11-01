@@ -1,0 +1,28 @@
+/* General styling for all boxes */
+div {
+  border: 1px solid #333;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+/* 1. padding-inline example */
+.padding-inline-example {
+  padding-inline: 20px; /* Adds padding to both sides of the inline axis (left and right in LTR) */
+}
+
+/* 2. padding-block example */
+.padding-block-example {
+  padding-block: 15px; /* Adds padding to both sides of the block axis (top and bottom) */
+}
+
+/* 3. padding-inline-start and padding-inline-end example */
+.padding-inline-start-end-example {
+  padding-inline-start: 15px; /* Adds padding to the inline start (left in LTR, right in RTL) */
+  padding-inline-end: 25px; /* Adds padding to the inline end (right in LTR, left in RTL) */
+}
+
+/* 4. padding-block-start and padding-block-end example */
+.padding-block-start-end-example {
+  padding-block-start: 10px; /* Adds padding to the block start (top) */
+  padding-block-end: 20px; /* Adds padding to the block end (bottom) */
+}

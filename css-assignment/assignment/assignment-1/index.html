@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Example</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="highlight">CSS Selectors Example</h1>
+    <h2 class="highlight">Level 4 Selectors in Action</h2>
+
+    <!-- State-based Selectors -->
+    <button>Hover and Click Me</button>
+    <button disabled>Disabled Button</button>
+    <br />
+    <br />
+
+    <!-- Form Selectors -->
+    <form>
+      <label for="age">Age (5-100):</label>
+      <input
+        type="number"
+        id="age"
+        min="5"
+        max="100"
+        placeholder="Enter age"
+        required
+      /><br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter valid email"
+        required
+      /><br />
+      <br />
+      <input type="checkbox" id="agree" />
+      <label for="agree">I Agree</label><br />
+    </form>
+    <br />
+    <br />
+
+    <!-- Structural Selectors -->
+    <div class="parent">
+      <p>First paragraph (only direct children apply)</p>
+      <p>Second paragraph</p>
+      <p>Third paragraph</p>
+      <p class="only-child">I am an only child if alone in parent</p>
+      <div class="empty"></div>
+    </div>
+    <br />
+    <br />
+
+    <!-- Level 4 Selectors -->
+    <div>
+      <p class="no-specificity">Paragraph without added specificity</p>
+      <p class="exclude-this">
+        This paragraph should be excluded from black text
+      </p>
+      <ul>
+        <li>Item 1</li>
+        <li class="selected">Item 2 (selected)</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </div>
+
+    <!-- Attribute Selectors -->
+    <a href="https://example.com">HTTPS Link</a><br />
+    <a href="https://example.com/download.pdf">Download PDF</a><br />
+    <a href="https://example.com/documents">Documents</a><br />
+    <br />
+    <!-- Content-based Selectors -->
+    <div class="content">
+      This is a content block that has before and after text.
+    </div>
+    <ul>
+      <li>Even Row</li>
+      <li>Odd Row</li>
+      <li>Even Row</li>
+      <li>Odd Row</li>
+    </ul>
+
+    <!-- Relationship Selectors -->
+    <h2>Heading 2</h2>
+    <p>Paragraph right after h2 (Adjacent sibling)</p>
+    <p>Another paragraph after h2 (General sibling)</p>
+  </body>
+</html>

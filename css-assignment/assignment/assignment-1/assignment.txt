@@ -1,0 +1,58 @@
+1. Selectors for Element States
+    :hover – Style an element when the user hovers their mouse over it.
+    :active – Style an element at the moment it's clicked.
+    :focus – Style an element when it's in focus (like when you click inside a text box).
+    :focus-within – Applies to an element if any part inside it is in focus.
+    :disabled – Styles elements that are disabled, like a grayed-out button.
+    :checked – Targets checked boxes or selected radio buttons.
+
+
+
+2. Selectors for Form Inputs
+    :valid – Style an input field when it has valid data (like a correct email format).
+    :invalid – Style an input when it has incorrect data.
+    :in-range and :out-of-range – Works with input fields with min and max values. :in-range means it's within the set range; :out-of-range means it's not.
+    :placeholder-shown – Targets an input when the placeholder text is visible (meaning no text has been entered).
+    :required and :optional – Targets required or optional form fields.
+
+
+
+3. Selectors Just for Buttons
+    :enabled – Styles buttons and inputs that are ready to be used.
+    :focus-visible – A version of :focus that only shows when the user focuses on an element through the keyboard (useful for accessibility).
+
+
+
+4. Selectors Based on Position
+    :nth-child(n) and :nth-of-type(n) – Select items based on their order in a parent, starting from 1.
+    :first-child, :last-child, :only-child – Style an element if it’s the first, last, or only child within its parent.
+    :empty – Selects elements with no children at all, not even text.
+
+
+
+5. CSS Level 4 Selectors (Newer Features)
+    :is() – Lets you style multiple elements in one go.
+    :where() – Similar to :is() but doesn’t affect specificity (priority of styles).
+    :is(div, p, span).special { color: teal; }
+    :not() – Excludes certain elements.
+
+
+
+6. Selectors for Matching Text or Attributes
+    [attribute^="value"] – Matches elements whose attribute starts with a specific value.
+    [attribute$="value"] – Matches elements whose attribute ends with a specific value.
+    [attribute*="value"] – Matches elements whose attribute contains a specific value anywhere.
+
+
+
+7. Selectors Based on Content
+    :empty – Styles elements with nothing inside (including no text).
+    ::before and ::after – Pseudo-elements that insert content before or after an element (often used for icons or decorative elements).
+    :nth-child(even) and :nth-child(odd) – Great for alternating row colors in tables or lists.
+
+
+    
+8. Selectors for Relationships Between Elements
+    > – Selects direct children only.
+    + – Selects the very next sibling (the element immediately following).
+    ~ – Selects all siblings that come after a specific element.
