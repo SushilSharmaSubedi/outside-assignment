@@ -1,0 +1,1 @@
+Creating a list with underlines appearing on hover, using pseudo-elements (::before or ::after) and classes.
