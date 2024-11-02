@@ -1,0 +1,7 @@
+Creating the Layout below.
+
+Things to remember
+    1. When the plan card is hovered. It should grow slightly in size and data in the detail card is filled to a certain value.
+    2. Make use of CSS variables.
+    3. Make use of the transition feature for smooth hover state.
+    4. Font of the component should be Open sans. Import it from google fonts
