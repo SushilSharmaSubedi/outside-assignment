@@ -1,0 +1,56 @@
+1. Thing to know for reviewer (if any)
+    -I underestimated the time it would take to complete this assignment. I did complete the mobile view but was unable to complete the desktop view for assignment number 16.
+
+
+2. How did you visualize the layout before starting code? Breaking down modules, wireframing or diagrams to decide your architecture, how did your project progress?
+    -Before starting the code, visualizing the layout involved creating a mental roadmap of how each section should connect and function. This was done through a mix of modular breakdowns, where key features and components were identified, and rough wireframes or sketches to capture the visual structure and user flow. From there, diagrams and outlines of relationships between modules helped set a clear architectural path, ensuring the project had an organized and scalable structure. The progression was iterative, refining each part as coding commenced and adapting as practical needs evolved.
+
+
+3. What challenges have you faced? 
+    -The challenges I faced during this assignment were mainly related to time management.
+
+
+4. List of resources you use
+    -I used the figma design for the layout and the icons from font awesome. Along with that I used the internet to research and learn about the new CSS features that I was not familiar with. I did study MDN web docs and W3Schools to better understand the CSS features that I used in this project.
+
+5. CSS features you have used in this project. Mark the difficulty level for each features out of 10
+    -I used the CSS features that we studied in the previous sessions. I would rate the difficulty level for each features out of 10 as follows:
+        -Flexbox: 5/10
+        -Grid: 8/10
+        -Positioning: 8/10
+        -Responsive Design: 8/10
+        -Animations and Transitions: 10/10
+        -Media Queries: 8/10
+        -Variables: 5/10
+
+
+6. Rate the difficulty level out of 10
+    -I would rate the difficulty level of this assignment as 8/10 because I felt there are still a lot of area I need to look into and improve on to become better at CSS.
+
+
+7. Rate your Code out of 10
+    -I would rate my code as 6/10 because I took the assignment lightly at first and when I started coding, I realized that the assignment was not as easy as I thought it would be. The code is functional and meets the basic requirements but I could have done even better and there are still alot of room for improvement.
+
+
+8. Rate your Confidence out of 10 after this project
+    -I would like to rate my confidence as 9/10 after this project because I now have a better understanding of the CSS features that I used in this project, I found out the basic functionalities of the CSS features and I am more confident in my ability to use them. Like I said earlier, there are still alot of room for improvement and I am looking forward to learning more about CSS.
+
+
+9. Has this project missed any of the CSS features we have studied
+    -I believe that this project has covered all the CSS features that we have studied.
+
+    
+10. How was your overall experience during these CSS sessions? What did you like? Was it helpful? What can be improved? Tell us your experience.
+    -My overall experience during these CSS sessions were great. I enjoyed the sessions and I am grateful for the opportunity to learn from the instructor. The sessions were helpful and I am looking forward to learning more about CSS.
+
+
+11. Do you need any guidance on CSS features that were not designed in this Session or features that you felt were missing?
+    -I do feel there are a few areas where additional guidance would be helpful:
+        -Advanced CSS Grid Techniques: While I have a good grasp of basic grid layout, understanding more complex grid properties and best practices for responsive design using grid would be valuable.
+        
+        -CSS Animations and Transitions: Enhancing user experience with more fluid animations and transitions while maintaining performance could use further exploration.
+        -Custom Properties (CSS Variables): Leveraging custom properties more effectively for themes and dynamic styling is an area where deeper insight could help streamline the code.
+
+
+
+
