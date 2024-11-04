@@ -1,0 +1,7 @@
+Create Layout below
+
+Things to remember
+    1. Use CSS variables
+    2. Button has hover effects which makes it primary button from outline primary
+    3. Each detail block has a hover effect. Decide the change after hovering yourself.
+    4. Make this block responsive.
