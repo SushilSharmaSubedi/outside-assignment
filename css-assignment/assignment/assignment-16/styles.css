@@ -153,7 +153,7 @@ body {
       }
     }
 
-    @media (min-width: 1023px) {
+    @media (min-width: 1440px) {
       width: 100%;
       height: fit-content;
       display: flex;
@@ -293,7 +293,7 @@ body {
     }
 
     @media (min-width: 1023px) {
-      height: 512px;
+      height: auto;
     }
   }
 }
