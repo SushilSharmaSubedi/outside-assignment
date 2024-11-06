@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="../../public/styles/index.css">
+    <link rel="stylesheet" href="/outside-assignment/php-assignment/day-3/user_auth_system/public/styles/index.css"/>
 </head>
 <body>
     <div class="container">
