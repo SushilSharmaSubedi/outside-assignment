@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../../public/styles/index.css">
+    <link rel="stylesheet" href="/outside-assignment/php-assignment/day-3/user_auth_system/public/styles/index.css">
 </head>
 <body>
     <div class="container">
         <div class="form-container">
-            <form action="welcome.php" method="post">
+            <form action="../controllers/UserController.php" method="post">
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="password" name="password" placeholder="Password" required>
+            <?php
+            session_start();
+            if (isset($_SESSION['message'])) {
+                echo "<p class='error-message'>" . $_SESSION['message'] . "</p>";
+                unset($_SESSION['message']); // Clear the message after displaying
+            }
+            ?>
                 <button type="submit" name="login">Login</button>
                 <a href="register.php">Don't have an account? Register</a>
             </form>
