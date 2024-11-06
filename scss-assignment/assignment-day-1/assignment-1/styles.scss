@@ -1,0 +1,8 @@
+$root-font-size: 16px; //assuming the root font size is 16px
+@function remConverter($px) {
+  $rem: $px / $root-font-size;
+  @return $rem + rem;
+}
+body {
+  font-size: remConverter(32px);
+}

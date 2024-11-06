@@ -1,0 +1,2 @@
+Assignment 2:
+    Write SCSS code that generates responsive typography styles for h1 through h6. Use maps/list to store mobile and desktop font sizes and line heights, and write a loop to apply the styles to each heading. 
