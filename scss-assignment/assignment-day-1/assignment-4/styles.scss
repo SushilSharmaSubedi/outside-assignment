@@ -1,0 +1,53 @@
+@mixin spacing($type, $values...) {
+  @if $type ==
+    "margin" or
+    $type ==
+    "margin-top" or
+    $type ==
+    "margin-right" or
+    $type ==
+    "margin-bottom" or
+    $type ==
+    "margin-left" or
+    $type ==
+    "padding" or
+    $type ==
+    "padding-top" or
+    $type ==
+    "padding-right" or
+    $type ==
+    "padding-bottom" or
+    $type ==
+    "padding-left"
+  {
+    @if length($values) == 2 {
+      #{$type}: nth($values, 1) nth($values, 2);
+    } @else {
+      #{$type}: #{$values};
+    }
+  } @else {
+    @warn "Invalid type: #{$type}. Use 'margin' or 'padding'.";
+  }
+}
+
+.margin-example {
+  @include spacing(margin, 10px 20px 30px 40px);
+  @include spacing(margin, 20px 0 30px);
+  @include spacing(margin, 0 20px);
+  @include spacing(margin, 20px 0);
+  @include spacing(margin-top, 10px);
+  @include spacing(margin-right, 5px);
+  @include spacing(margin-bottom, 10px);
+  @include spacing(margin-left, 5px);
+}
+
+.padding-example {
+  @include spacing(padding, 10px 20px 30px 40px);
+  @include spacing(padding, 20px 0 30px);
+  @include spacing(padding, 0 20px);
+  @include spacing(padding, 20px 0);
+  @include spacing(padding-top, 10px);
+  @include spacing(padding-right, 5px);
+  @include spacing(padding-bottom, 10px);
+  @include spacing(padding-left, 5px);
+}

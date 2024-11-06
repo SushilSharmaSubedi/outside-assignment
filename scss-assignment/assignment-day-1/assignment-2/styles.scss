@@ -1,0 +1,51 @@
+@use "sass:map";
+
+$font-sizes: (
+  mobile: (
+    34px,
+    30px,
+    26px,
+    20px,
+    18px,
+    16px,
+  ),
+  desktop: (
+    48px,
+    42px,
+    36px,
+    28px,
+    24px,
+    20px,
+  ),
+);
+
+$line-heights: (
+  mobile: (
+    1.2,
+    1.3,
+    1.4,
+    1.5,
+    1.6,
+    1.7,
+  ),
+  desktop: (
+    1.1,
+    1.2,
+    1.3,
+    1.4,
+    1.5,
+    1.6,
+  ),
+);
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: nth(map.get($font-sizes, mobile), $i);
+    line-height: nth(map.get($line-heights, mobile), $i);
+
+    @media (min-width: 768px) {
+      font-size: nth(map.get($font-sizes, desktop), $i);
+      line-height: nth(map.get($line-heights, desktop), $i);
+    }
+  }
+}
