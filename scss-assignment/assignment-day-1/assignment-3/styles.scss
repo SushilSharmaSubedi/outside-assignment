@@ -1,0 +1,23 @@
+@mixin responsive-card-layout() {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.card {
+  @include responsive-card-layout();
+
+  &__media {
+    flex: 0 0 auto;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+  }
+}
