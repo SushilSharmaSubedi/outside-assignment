@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f0f0f0;
+  font-size: 16px;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.box {
+  width: 60%;
+  height: fit-content;
+  background-color: #fff;
+  padding: 2rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: last baseline;
+}
+.list-item a {
+  &:hover {
+    color: #00bbff;
+  }
+}
