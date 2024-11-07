@@ -1,53 +1,53 @@
-@mixin spacing($type, $values...) {
-  @if $type ==
-    "margin" or
-    $type ==
-    "margin-top" or
-    $type ==
-    "margin-right" or
-    $type ==
-    "margin-bottom" or
-    $type ==
-    "margin-left" or
-    $type ==
-    "padding" or
-    $type ==
-    "padding-top" or
-    $type ==
-    "padding-right" or
-    $type ==
-    "padding-bottom" or
-    $type ==
-    "padding-left"
-  {
-    @if length($values) == 2 {
-      #{$type}: nth($values, 1) nth($values, 2);
+@mixin generate-margin-padding($numbers) {
+  $default-value: 4px;
+  $sides: (top, bottom, left, right);
+  @for $number from 0 through $numbers {
+    $pixels: $default-value * $number;
+    @if $number == 0 {
+      .m-#{$number} {
+        margin: 0;
+      }
     } @else {
-      #{$type}: #{$values};
+      .m-#{$number} {
+        margin: #{$pixels};
+      }
     }
-  } @else {
-    @warn "Invalid type: #{$type}. Use 'margin' or 'padding'.";
+    @each $side in $sides {
+      @if $number == 0 {
+        .m#{str-slice($side, 0, 1)}-#{$number} {
+          margin-#{$side}: 0;
+        }
+      } @else {
+        .m#{str-slice($side, 0, 1)}-#{$number} {
+          margin-#{$side}: #{$pixels};
+        }
+      }
+    }
+  }
+
+  @for $number from 0 through $numbers {
+    $pixels: $default-value * $number;
+    @if $number == 0 {
+      .p-#{$number} {
+        padding: 0;
+      }
+    } @else {
+      .p-#{$number} {
+        padding: #{$pixels};
+      }
+    }
+    @each $side in $sides {
+      @if $number == 0 {
+        .p#{str-slice($side, 0, 1)}-#{$number} {
+          padding-#{$side}: 0;
+        }
+      } @else {
+        .p#{str-slice($side, 0, 1)}-#{$number} {
+          padding-#{$side}: #{$pixels};
+        }
+      }
+    }
   }
 }
 
-.margin-example {
-  @include spacing(margin, 10px 20px 30px 40px);
-  @include spacing(margin, 20px 0 30px);
-  @include spacing(margin, 0 20px);
-  @include spacing(margin, 20px 0);
-  @include spacing(margin-top, 10px);
-  @include spacing(margin-right, 5px);
-  @include spacing(margin-bottom, 10px);
-  @include spacing(margin-left, 5px);
-}
-
-.padding-example {
-  @include spacing(padding, 10px 20px 30px 40px);
-  @include spacing(padding, 20px 0 30px);
-  @include spacing(padding, 0 20px);
-  @include spacing(padding, 20px 0);
-  @include spacing(padding-top, 10px);
-  @include spacing(padding-right, 5px);
-  @include spacing(padding-bottom, 10px);
-  @include spacing(padding-left, 5px);
-}
+@include generate-margin-padding(1);
