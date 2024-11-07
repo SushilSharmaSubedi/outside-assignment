@@ -26,7 +26,7 @@
                 }
                 ?>
                 <button type="submit" name="register">Register</button>
-                <a href="/outside-assignment/php-assignment/day-3/user_auth_system/app/views/login.php">Already have an account? Login</a>
+                <a href="login.php">Already have an account? Login</a>
             </form>
         </div>
     </div>
