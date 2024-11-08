@@ -1,0 +1,99 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --background-color-primary: #093944;
+  --color-white: #ffffff;
+  --text-color-secondary: #90a5a9;
+  --color-teal: #00a599;
+  --border-color: #20545f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+  height: 100vh;
+  width: 100%;
+}
+.faq {
+  display: flex;
+  gap: 176px;
+  padding: 162px 99px 157px 149px;
+  background-color: var(--background-color-primary);
+  width: 100%;
+  height: 100%;
+  &__item:nth-child(1) {
+    width: 40%;
+  }
+  &__item:nth-child(2) {
+    width: 60%;
+  }
+  &__item-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+    color: var(--color-teal);
+  }
+  &__item-subtitle {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--color-white);
+  }
+  &__item-button {
+    margin-top: 40px;
+    padding: 18px 48px;
+    border: 1px solid var(--color-white);
+    border-radius: 48px;
+    background-color: transparent;
+    color: var(--color-white);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    font-family: var(--font-family);
+  }
+  &__item-details {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+  &__item-details-summary {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-white);
+    margin-bottom: 8px;
+    position: relative;
+    list-style-type: none;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.01);
+      transition: all 0.5s ease;
+      color: var(--color-teal);
+    }
+    &::before {
+      content: "\2228";
+      color: var(--color-teal);
+      font-size: 20px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__item-details-summary.active {
+    &::before {
+      content: "\2227";
+    }
+  }
+
+  &__item-details-content {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: var(--text-color-secondary);
+  }
+}
