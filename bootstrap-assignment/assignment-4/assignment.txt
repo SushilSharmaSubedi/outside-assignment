@@ -1,0 +1,9 @@
+Assignment 4: Navbar and Dropdown Menu (15 points)
+Objective: Build a responsive navigation bar with a dropdown menu.
+Tasks:
+1. Navbar Creation (5 points):
+    Design a navbar with a brand/logo on the left and navigation links on the right.
+2. Dropdown Menu (5 points):
+    Add a dropdown menu to one of the links.
+3. Responsive Toggle (5 points):
+    Ensure the navbar collapses on smaller screens, with a toggle button for menu items.
