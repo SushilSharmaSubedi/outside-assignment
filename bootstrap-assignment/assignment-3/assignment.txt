@@ -1,0 +1,9 @@
+Assignment 3: Responsive Card Layout (10 points)
+Objective: Practice creating responsive card layouts using Bootstrap’s card and grid classes.
+Tasks:
+1. Card Deck (4 points):
+    Create 4 Bootstrap cards in a row, each containing an image, a title, text, and a button.
+2. Tablet (3 points):
+    Create 2 Bootstrap cards in a row, each containing an image, a title, text, and a button.
+3. Small Devices (3 points):
+    Use the Bootstrap grid to make the cards stack vertically on smaller screens.
