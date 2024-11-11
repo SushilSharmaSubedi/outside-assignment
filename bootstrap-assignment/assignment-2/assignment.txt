@@ -1,0 +1,6 @@
+Assignment 2: Basic Forms (15 points)
+Objective: Gain experience in styling and validating forms using Bootstrap.
+Tasks:
+1. Contact Form Creation:
+    Create a form with fields for name, email, phone, and a message textarea.
+    Add labels, placeholders, and use .form-control for input styling.
