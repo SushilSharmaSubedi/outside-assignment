@@ -1,0 +1,9 @@
+Assignment 1: Utility Classes (15 points)
+Objective: Familiarize with Bootstrap utility classes for spacing, alignment, color, and display.
+Tasks:
+1. Spacing and Backgrounds (5 points):
+    Create a container with three boxes using .m-*, .p-*, and different background utilities like .bg-primary and .bg-light.
+2. Text Styling and Alignment (5 points):
+    Add text to each box using .text-* classes (e.g., .text-muted, .text-center) to format text color and alignment.
+3. Flex and Grid Alignment (5 points):
+    Arrange the boxes in a responsive grid layout that changes to a row on larger screens.

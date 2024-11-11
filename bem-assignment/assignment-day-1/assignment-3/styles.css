@@ -34,15 +34,17 @@ body {
 .faq__item:nth-child(2) {
   width: 60%;
 }
-.faq__item-title {
+.faq__item-title, .faq__item-subtitle, .faq__item-button, .faq__item-details-summary, .faq__item-details-content {
   font-weight: 400;
+  font-family: var(--font-family);
+}
+.faq__item-title {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 1.5px;
   color: var(--color-teal);
 }
 .faq__item-subtitle {
-  font-weight: 400;
   font-size: 38px;
   line-height: 48px;
   color: var(--color-white);
@@ -55,17 +57,13 @@ body {
   background-color: transparent;
   color: var(--color-white);
   font-size: 15px;
-  font-weight: 400;
   line-height: 20px;
   text-align: center;
-  font-family: var(--font-family);
   cursor: pointer;
-  &:hover {
-    transform: scale(1.01);
-    transition: all 0.5s ease;
-    background-color: var(--color-white);
-    color: var(--background-color-primary);
-  }
+}
+.faq__item-button:hover {
+  background-color: var(--color-white);
+  color: var(--background-color-primary);
 }
 .faq__item-details {
   border-bottom: 1px solid var(--border-color);
@@ -73,7 +71,6 @@ body {
   margin-bottom: 24px;
 }
 .faq__item-details-summary {
-  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   color: var(--color-white);
@@ -81,10 +78,10 @@ body {
   position: relative;
   list-style-type: none;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .faq__item-details-summary:hover {
   transform: scale(1.01);
-  transition: all 0.5s ease;
   color: var(--color-teal);
 }
 .faq__item-details-summary::before {
@@ -100,8 +97,7 @@ details[open] .faq__item-details-summary::before {
   content: "∧";
 }
 .faq__item-details-content {
-  font-weight: 400;
   font-size: 17px;
   line-height: 28px;
   color: var(--text-color-secondary);
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
