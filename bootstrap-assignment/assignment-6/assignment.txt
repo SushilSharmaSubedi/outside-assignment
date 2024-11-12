@@ -1,0 +1,10 @@
+Assignment 6: Responsive Portfolio Page (30 points)
+Objective: Design a single-page portfolio layout using various Bootstrap components.
+Tasks:
+1. Hero Section (10 points):
+    Create a full-width hero section with a background image, overlaid with text and a call-to-action button.
+2. About and Project Sections (10 points):
+    Create an about section with a profile image and text.
+    Add a project section displaying three to four project thumbnails in a card layout.
+3. Contact Form and Footer (10 points):
+    Place a styled contact form at the bottom of the page, along with a footer.
