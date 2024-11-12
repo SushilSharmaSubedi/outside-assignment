@@ -1,0 +1,7 @@
+Assignment 5: Carousel and Modal (15 points)
+Objective: Practice with interactive components like carousels and modals.
+Tasks:
+1. Carousel Creation (8 points):
+    Create a carousel with three slides, each with an image, caption, and button. Button should open the modal with form.
+2. Modal with Form (7 points):
+    Create a button that opens a modal containing a basic contact form.
