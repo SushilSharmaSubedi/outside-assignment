@@ -1,21 +1,39 @@
+// Define variables for repeated values
+$background-dark: #1f1f1f;
+$background-project: #986464;
+$background-contact: #4277a5;
+$highlight-color: yellowgreen;
+$font-family: "Inter", sans-serif;
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
-  font-family: Inter, sans-serif;
+  font-family: $font-family;
 }
+
 .hero-container {
-  height: calc(100vh - 96px);
-  background-image: url(assets/hero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: calc(100vh + 96px);
+
+  background: {
+    image: url(assets/hero.jpg);
+    size: cover;
+    repeat: no-repeat;
+  }
 }
+
 .about-container {
-  background-color: #1f1f1f;
+  background-color: $background-dark;
+
   img {
     width: 300px;
     height: 400px;
     object-fit: cover;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    animation: scale 5s infinite;
+
     @media (min-width: 576px) {
       width: 100%;
       height: 400px;
@@ -23,28 +41,43 @@ body {
     }
   }
 }
+
 .project-section {
-  background-color: #986464;
+  background-color: $background-project;
+}
+.card {
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 .contact-section {
-  background-color: #4277a5;
+  background-color: $background-contact;
 }
+
 .footer-section {
-  background-color: #1f1f1f;
+  background-color: $background-dark;
 }
+.animate-text {
+  animation: textAppear 2s infinite;
+}
+
 .back-to-top {
-  border: 2px solid yellowgreen;
+  border: 2px solid $highlight-color;
   border-radius: 50%;
   padding: 12px;
   position: fixed;
   bottom: 8px;
   right: 24px;
   cursor: pointer;
-  animation: jump 3s infinite;
+  animation: jump 4s infinite;
 
   a {
     text-decoration: none;
-    color: yellowgreen;
+    color: $highlight-color;
   }
 }
 
@@ -55,5 +88,33 @@ body {
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  25% {
+    opacity: 0.25;
+    transform: translateY(15px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
