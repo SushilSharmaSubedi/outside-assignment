@@ -1,0 +1,23 @@
+.btn {
+  &_primary {
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: var(--purple);
+    color: white;
+    text-decoration: none;
+  }
+  &_secondary {
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: var(--light-brown);
+    color: white;
+    text-decoration: none;
+  }
+  &_default {
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: var(--warning);
+    color: white;
+    text-decoration: none;
+  }
+}

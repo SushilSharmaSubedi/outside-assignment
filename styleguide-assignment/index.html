@@ -13,23 +13,257 @@
     />
   </head>
   <body>
-    <h1>Style Guide</h1>
-
-    <section>
-      <h2>Colors</h2>
-      <div class="color-box">Primary Red: #FA2A32</div>
-    </section>
-
-    <section>
-      <h2>Typography</h2>
-      <p style="font-family: 'Arial', sans-serif">This is a sample text.</p>
-    </section>
-
-    <section>
-      <h2>Buttons</h2>
-      <button class="button-primary">Primary Button</button>
-    </section>
-
-    <!-- Add more sections as needed -->
+    <header>
+      <h1 class="text-center mt-5">Style Guide</h1>
+    </header>
+    <main class="">
+      <section class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <div class="position-sticky top-0">
+                <h2 class="fs-2 mb-2 border-bottom py-4">
+                  <a class="text-decoration-none text-dark" href="#colors"
+                    >Colors</a
+                  >
+                </h2>
+                <h2 class="fs-2 mb-2 border-bottom py-4">
+                  <a class="text-decoration-none text-dark" href="#typography"
+                    >Typography</a
+                  >
+                </h2>
+                <h2 class="fs-2 mb-2 border-bottom py-4">
+                  <a class="text-decoration-none text-dark" href="#buttons"
+                    >Buttons</a
+                  >
+                </h2>
+                <h2 class="fs-2 mb-2 border-bottom py-4">
+                  <a class="text-decoration-none text-dark" href="#icons">Icons</a>
+                </h2>
+                <h2 class="fs-2 mb-2 border-bottom py-4">
+                  <a class="text-decoration-none text-dark" href="#links">Links</a>
+                </h2>
+                <h2 class="fs-2 mb-2 border-bottom py-4">
+                  <a class="text-decoration-none text-dark" href="#layout"
+                    >Layout</a
+                  >
+                </h2>
+              </div>
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="container-colors border-bottom pb-5">
+                <h3 id="colors">Colors</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col-12 col-md-4">
+                    <div class="color-box bg-primary-color text-white p-3">
+                      <p class="fw-bold fs-2">Primary</p>
+                      <p>$primary-color</p>
+                      <p>#fa2a32</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="color-box bg-secondary-color text-white p-3">
+                      <p class="fw-bold fs-2">Secondary</p>
+                      <p>$secondary-color</p>
+                      <p>#82685d</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="color-box bg-light-brown text-white p-3">
+                      <p class="fw-bold fs-2">Light Brown</p>
+                      <p>$light-brown</p>
+                      <p>#b0988d</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="color-box bg-purple text-white p-3">
+                      <p class="fw-bold fs-2">Purple</p>
+                      <p>$purple</p>
+                      <p>#b73983</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="color-box bg-gray-light text-black p-3">
+                      <p class="fw-bold fs-2">Gray Light</p>
+                      <p>$gray-light</p>
+                      <p>#fef7f7</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="color-box bg-warning text-black p-3">
+                      <p class="fw-bold fs-2">Warning</p>
+                      <p>$warning</p>
+                      <p>#ffc107</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="color-box bg-success text-black p-3">
+                      <p class="fw-bold fs-2">Success</p>
+                      <p>$success</p>
+                      <p>#28a745</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="color-box bg-info text-black p-3">
+                      <p class="fw-bold fs-2">Info</p>
+                      <p>$info</p>
+                      <p>#17a2b8</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="color-box bg-danger text-black p-3">
+                      <p class="fw-bold fs-2">Danger</p>
+                      <p>$danger</p>
+                      <p>#dc3545</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-typography mt-5 border-bottom pb-5">
+                <h3 id="typography">Typography</h3>
+                <div>
+                  <p class="fw-bold fs-1">h1, h2, h3, h4, h5, h6 - Heading</p>
+                  <p class="fs-3">Font-Weight: 500</p>
+                  <p class="fs-3">Letter-Spacing: -3%</p>
+                </div>
+                <div>
+                  <p class="hfs-1">hfs-1 - Heading 1</p>
+                  <p>Desktop - 64px Mobile/Tablet - 48px</p>
+                </div>
+                <div>
+                  <p class="hfs-2">hfs-2 - Heading 2</p>
+                  <p>Desktop - 40px Mobile/Tablet - 28px</p>
+                </div>
+                <div>
+                  <p class="hfs-3">hfs-3 - Heading 3</p>
+                  <p>Desktop - 40px Mobile/Tablet - 28px</p>
+                </div>
+                <div>
+                  <p class="hfs-4">hfs-4 - Heading 4</p>
+                  <p>Desktop - 40px Mobile/Tablet - 28px</p>
+                </div>
+                <div>
+                  <p class="hfs-5">hfs-5 - Heading 5</p>
+                  <p>Desktop - 40px Mobile/Tablet - 28px</p>
+                </div>
+                <div>
+                  <p class="hfs-6">hfs-6 - Heading 6</p>
+                  <p>Desktop - 40px Mobile/Tablet - 28px</p>
+                </div>
+                <div>
+                  <p class="fw-bold fs-1">p1, p2, p3, p4, p5, p6 - Paragraph</p>
+                  <p class="fs-3">Font-Weight: 400</p>
+                </div>
+                <div>
+                  <p class="pfs-1">pfs-1 - Paragraph 1</p>
+                  <p>Desktop - 24px Mobile/Tablet - 20px</p>
+                </div>
+                <div>
+                  <p class="pfs-2">pfs-2 - Paragraph 2</p>
+                  <p>Desktop - 20px Mobile/Tablet - 16px</p>
+                </div>
+                <div>
+                  <p class="pfs-3">pfs-3 - Paragraph 3</p>
+                  <p>Desktop - 16px Mobile/Tablet - 14px</p>
+                </div>
+                <div>
+                  <p class="pfs-4">pfs-4 - Paragraph 4</p>
+                  <p>Desktop - 14px Mobile/Tablet - 13px</p>
+                </div>
+                <div>
+                  <p class="pfs-5">pfs-5 - Paragraph 5</p>
+                  <p>Desktop - 12px Mobile/Tablet - 12px</p>
+                </div>
+                <div>
+                  <p class="pfs-6">pfs-6 - Paragraph 6</p>
+                  <p>Desktop - 10px Mobile/Tablet - 10px</p>
+                </div>
+              </div>
+              <div class="container-buttons mt-5 border-bottom pb-5">
+                <h3 id="buttons">Buttons</h3>
+                <div class="mt-3 d-flex flex-column gap-5 align-items-center">
+                  <div class="d-flex flex-column align-items-center">
+                    <a class="btn_default">Default</a>
+                    <p> < a class = btn_default > Default < / a ></a></p>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <a class="btn_primary">Primary</a>
+                    <p> < a class = btn_primary > Primary < / a ></p>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <a class="btn_secondary">Secondary</a>
+                    <p> < a class = btn_secondary > Secondary < / a ></p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-icons mt-5 border-bottom pb-5">
+                <h3 id="icons">Icons</h3>
+              </div>
+              <div class="container-links mt-5 border-bottom pb-5">
+                <h3 id="links">Links</h3>
+                <div class="d-flex justify-content-around">
+                  <div class="d-flex flex-column align-items-center">
+                    <h3>Link</h3>
+                    <a href="#" class="text-decoration-none">Link</a>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <h3>Hover</h3>
+                    <a href="#" class="link">Link</a>
+                  </div>
+                </div>
+                </div>
+                <div class="container-layout mt-5 border-bottom pb-5">
+                  <h3 id="layout">Layout</h3>
+                  <div>
+                    <p class="pfs-1">Desktop(XXL) - 1441PX+</p>
+                    <ul>
+                      <li>12 column flexible grid system</li>
+                      <li>Spacing is in multiples of 4</li>
+                      <li>Desktop font sizes, footer, main nav</li>
+                    </ul>
+                  </div>
+                  <div class="mt-3">
+                    <p class="pfs-1">Desktop(XL) - 1200PX - 1440PX</p>
+                    <p class="pfs-2">
+                      Desktop font sizes, footer, main nav.
+                    </p>
+                    <p class="pfs-3">Largest size (1440px)</p>
+                    <p class="pfs-3">Min size (1200px)</p>
+                  </div>
+                  <div>
+                    <p class="pfs-1">Small Desktop(LG) - 993PX - 1199PX</p>
+                    <ul>
+                      <li>Mobile font sizes</li>
+                      <li>Tablet footer and main nav</li>
+                    </ul>
+                    <p class="pfs-3">Max size (1099px wide)</p>
+                    <p class="pfs-3">Min size (768px wide)</p>
+                  </div>
+                  <div>
+                    <p class="pfs-1">Tablet(MD) - 768PX - 992PX</p>
+                    <ul>
+                      <li>Mobile font sizes</li>
+                      <li>Tablet footer and main nav</li>
+                    </ul>
+                    <p class="pfs-3">Max size (992px wide)</p>
+                    <p class="pfs-3">Min size (768px wide)</p>
+                  </div>
+                  <div>
+                    <p class="pfs-1">Mobile(XS) - <=767PX</p>
+                    <ul>
+                      <li>Mobile font sizes</li>
+                      <li>Mobile footer and main nav</li>
+                    </ul>
+                    <p class="pfs-3">Max size (767px wide)</p>
+                    <p class="pfs-3">Min size (320px wide)</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
