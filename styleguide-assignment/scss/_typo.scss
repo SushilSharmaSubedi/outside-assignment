@@ -1,0 +1,63 @@
+@use "sass:map";
+
+$font-sizes: (
+  desktop: (
+    64px,
+    40px,
+    32px,
+    24px,
+    16px,
+    14px,
+  ),
+  mobile: (
+    40px,
+    28px,
+    20px,
+    18px,
+    14px,
+    14px,
+  ),
+);
+$paragraph-font-sizes: (
+  desktop: (
+    24px,
+    20px,
+    16px,
+    14px,
+    12px,
+    10px,
+  ),
+  mobile: (
+    20px,
+    16px,
+    14px,
+    13px,
+    12px,
+    10px,
+  ),
+);
+@for $i from 1 through 6 {
+  h#{$i},
+  .hfs-#{$i} {
+    font-size: nth(map.get($font-sizes, mobile), $i);
+    letter-spacing: -3%;
+    font-weight: 500;
+
+    @media (min-width: 768px) {
+      font-size: nth(map.get($font-sizes, desktop), $i);
+      letter-spacing: -3%;
+      font-weight: 500;
+    }
+  }
+}
+@for $i from 1 through 6 {
+  .pfs-#{$i} {
+    font-size: nth(map.get($paragraph-font-sizes, mobile), $i);
+    font-weight: 400;
+
+    @media (min-width: 768px) {
+      font-size: nth(map.get($paragraph-font-sizes, desktop), $i);
+      font-weight: 400;
+    }
+  }
+}

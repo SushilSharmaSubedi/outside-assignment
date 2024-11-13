@@ -8,4 +8,234 @@
   --success: #28a745;
   --info: #17a2b8;
   --danger: #dc3545;
+}
+
+.bg-primary-color {
+  background-color: #fa2a32;
+}
+
+.bg-secondary-color {
+  background-color: #82685d;
+}
+
+.bg-light-brown {
+  background-color: #b0988d;
+}
+
+.bg-purple {
+  background-color: #b73983;
+}
+
+.bg-gray-light {
+  background-color: #fef7f7;
+}
+
+.bg-warning {
+  background-color: #ffc107;
+}
+
+.bg-success {
+  background-color: #28a745;
+}
+
+.bg-info {
+  background-color: #17a2b8;
+}
+
+.bg-danger {
+  background-color: #dc3545;
+}
+
+h1,
+.hfs-1 {
+  font-size: 40px;
+  letter-spacing: -3%;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  h1,
+  .hfs-1 {
+    font-size: 64px;
+    letter-spacing: -3%;
+    font-weight: 500;
+  }
+}
+
+h2,
+.hfs-2 {
+  font-size: 28px;
+  letter-spacing: -3%;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  h2,
+  .hfs-2 {
+    font-size: 40px;
+    letter-spacing: -3%;
+    font-weight: 500;
+  }
+}
+
+h3,
+.hfs-3 {
+  font-size: 20px;
+  letter-spacing: -3%;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  h3,
+  .hfs-3 {
+    font-size: 32px;
+    letter-spacing: -3%;
+    font-weight: 500;
+  }
+}
+
+h4,
+.hfs-4 {
+  font-size: 18px;
+  letter-spacing: -3%;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  h4,
+  .hfs-4 {
+    font-size: 24px;
+    letter-spacing: -3%;
+    font-weight: 500;
+  }
+}
+
+h5,
+.hfs-5 {
+  font-size: 14px;
+  letter-spacing: -3%;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  h5,
+  .hfs-5 {
+    font-size: 16px;
+    letter-spacing: -3%;
+    font-weight: 500;
+  }
+}
+
+h6,
+.hfs-6 {
+  font-size: 14px;
+  letter-spacing: -3%;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  h6,
+  .hfs-6 {
+    font-size: 14px;
+    letter-spacing: -3%;
+    font-weight: 500;
+  }
+}
+
+.pfs-1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .pfs-1 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.pfs-2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .pfs-2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.pfs-3 {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .pfs-3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.pfs-4 {
+  font-size: 13px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .pfs-4 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.pfs-5 {
+  font-size: 12px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .pfs-5 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.pfs-6 {
+  font-size: 10px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .pfs-6 {
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+
+.btn_primary {
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: var(--purple);
+  color: white;
+  text-decoration: none;
+}
+.btn_secondary {
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: var(--light-brown);
+  color: white;
+  text-decoration: none;
+}
+.btn_default {
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: var(--warning);
+  color: white;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+.link:hover {
+  color: var(--info);
+}
+
+.color-box {
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 16px;
 }/*# sourceMappingURL=main.css.map */
