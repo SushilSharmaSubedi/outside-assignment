@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .hero-container {
@@ -21,6 +21,9 @@ body {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  animation: scale 5s infinite;
 }
 @media (min-width: 576px) {
   .about-container img {
@@ -35,12 +38,25 @@ body {
   background-color: #986464;
 }
 
+.card {
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
 .contact-section {
   background-color: #4277a5;
 }
 
 .footer-section {
   background-color: #1f1f1f;
+}
+
+.animate-text {
+  animation: textAppear 2s infinite;
 }
 
 .back-to-top {
@@ -51,7 +67,7 @@ body {
   bottom: 8px;
   right: 24px;
   cursor: pointer;
-  animation: jump 3s infinite;
+  animation: jump 4s infinite;
 }
 .back-to-top a {
   text-decoration: none;
@@ -64,5 +80,31 @@ body {
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  25% {
+    opacity: 0.25;
+    transform: translateY(15px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=styles.css.map */
