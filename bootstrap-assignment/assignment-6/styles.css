@@ -7,7 +7,7 @@ body {
 }
 
 .hero-container {
-  height: calc(100vh - 96px);
+  height: calc(100vh + 96px);
   background-image: url(assets/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
