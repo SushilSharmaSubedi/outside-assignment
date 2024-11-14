@@ -1,0 +1,66 @@
+// styleguide-assignment/scss/_layout.scss
+
+// Variables for breakpoints
+$breakpoint-xxl: 1441px;
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 993px;
+$breakpoint-md: 768px;
+$breakpoint-xs: 767px;
+
+@mixin grid-system($columns: 12) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: 4px; // Spacing in multiples of 4
+}
+
+// Desktop (XXL) - 1441PX+
+@media (min-width: $breakpoint-xxl) {
+  .xxl {
+    body {
+      @include grid-system();
+      font-size: 18px;
+    }
+  }
+}
+
+// Desktop (XL) - 1200PX - 1440PX
+@media (min-width: $breakpoint-xl) and (max-width: ($breakpoint-xxl - 1)) {
+  .xl {
+    body {
+      @include grid-system();
+      font-size: 16px; // Example font size
+    }
+  }
+}
+// Additional styles for footer, main nav, etc.
+
+// Small Desktop (LG) - 993PX - 1199PX
+@media (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1)) {
+  .lg {
+    body {
+      @include grid-system();
+      font-size: 14px; // Example font size
+    }
+  }
+  // Additional styles for footer, main nav, etc.
+}
+
+// Tablet (MD) - 768PX - 992PX
+@media (min-width: $breakpoint-md) and (max-width: ($breakpoint-lg - 1)) {
+  .md {
+    body {
+      @include grid-system();
+      font-size: 14px;
+    }
+  }
+}
+
+// Mobile (XS) - <=767PX
+@media (max-width: $breakpoint-xs) {
+  .xs {
+    body {
+      display: block;
+      font-size: 12px;
+    }
+  }
+}

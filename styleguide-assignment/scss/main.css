@@ -230,10 +230,84 @@ h6,
   font-weight: 600;
   font-size: 16px;
 }
-.link:hover {
-  color: var(--info);
+
+@font-face {
+  font-family: "icomoon";
+  src: url("/fonts/icomoon.eot?fdgrtk");
+  src: url("/fonts/icomoon.eot?fdgrtk#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?fdgrtk") format("truetype"), url("/fonts/icomoon.woff?fdgrtk") format("woff"), url("/fonts/icomoon.svg?fdgrtk#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-home:before {
+  content: "\e900";
+}
+
+.icon-home2:before {
+  content: "\e901";
+}
+
+.icon-play:before {
+  content: "\e912";
+}
+
+.icon-film:before {
+  content: "\e913";
+}
+
+@media (min-width: 1441px) {
+  .xxl body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .xl body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  .lg body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .md body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .xs body {
+    display: block;
+    font-size: 12px;
+  }
+}
 .color-box {
   height: -moz-fit-content;
   height: fit-content;
