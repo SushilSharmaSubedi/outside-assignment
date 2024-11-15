@@ -1,0 +1,4 @@
+Web accessibility Assignment 
+1. Make a mega menu and make it accessible to keyboard only users, use proper ARIA controls, use the color that passes the color contrast for Level AA
+2. Make a form that looks the same as the image below. You can change the color as you want. Make this form accessible. 
+
