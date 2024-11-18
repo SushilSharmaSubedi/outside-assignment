@@ -1,0 +1,13 @@
+.required-asterisk {
+  color: #b50000;
+}
+.skip-to-content {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &:focus {
+    z-index: 1;
+    position: relative;
+  }
+}
