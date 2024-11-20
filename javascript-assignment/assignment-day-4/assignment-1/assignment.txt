@@ -1,0 +1,9 @@
+Assignment.
+1. Create two square boxes that rotates by 90 deg when comes in a viewport.
+   a. One will rotate only once
+   b. Second will rotate in every appearance.
+2. Apply the debouncing technique on resize event. After the end of resize throw a console message saying, “Window is resized”.
+3. Apply the throttling technique in a button. The button should be pressed only once every 1 second.
+
+
+
